@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FDF5FF"
+    android:background="@color/white"
+    tools:context=".SplashActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="180dp"
+            android:layout_height="144dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/justlogo"
+            android:transitionName="logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/titles"
+            android:layout_width="368dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/title"
+            android:transitionName="logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/letsgo"
+            android:layout_width="200dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="264dp"
+            android:background="@drawable/buttonbaground2"
+            android:text="Lets Get Started"
+            android:textAllCaps="false"
+
+            android:textColor="#E60829"
+            app:layout_constraintEnd_toEndOf="@+id/titles"
+            app:layout_constraintStart_toStartOf="@+id/titles"
+            app:layout_constraintTop_toBottomOf="@+id/titles" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
